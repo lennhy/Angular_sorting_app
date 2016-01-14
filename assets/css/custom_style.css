@@ -1,0 +1,180 @@
+
+/*======================================BODY*/
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 12px; 
+/*set default font size to change the size font in the body*/
+}
+.fade{
+transition:0.5s linear all;
+  opacity:0;
+}
+/*=====================================HEADERS*/
+
+h3{
+	font-size: .9em;
+/*	text-transform: uppercase;*/	
+	font-weight: 700;	
+	letter-spacing: .075em;
+}
+
+/*==================================NAVIGATION*/
+nav.navbar {
+/*main navbar at the utmost top*/
+	width:100%;
+	height:auto;
+	position: fixed;
+	background-color: #fff;
+	border-radius: 0;
+	border-bottom: 2px solid #fff;
+
+}
+ul.navbar-brand{
+	margin-right: 50px;
+	width: 100px;
+}
+ul.navbar-brand img{
+	width:75%;
+	height: auto;
+}
+ul.nav li.sort-non-active{
+	width:200px;
+	padding: 0;
+	margin-right: 20px;
+}
+li{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+li.non-active h3{
+	color:#fff;
+	font-size:1.2em;
+	text-transform: uppercase;
+	letter-spacing: .09em;
+}
+
+/*===================================TABLES*/
+table.table{
+/*distance the heaader bar from the start of table headers*/
+	margin-top: 50px;
+	letter-spacing: .075em;
+}
+.table th{
+/*background color for table headers*/
+	background-color: #333;
+}
+tr.category{
+/*bottom border for header row of table*/
+}
+tr.category h3{
+	color: #21b3e8;	
+	font-size: 1em;
+}
+td img{
+	width:100%;
+	margin:0;
+}
+table.table td.text-aqua{
+/*unique background color for article title*/
+	background-color:#21b3e8;
+}
+table.table td.text {
+/*body of table*/
+/*center the text inside the table body vertically*/
+	vertical-align: middle;
+	padding:30px;
+	text-align: center;
+	width:100px;
+}
+td:nth-child(2){
+	background-color: #fff;
+	-webkit- transition: all 0.25s ease;
+	-moz- transition: all 0.25s ease;
+	-os- transition: all 0.25s ease;
+	transition: all 0.25s ease;
+
+}
+td:nth-child(2):hover{
+	-webkit- transform: translateX(5%);
+    -moz- transform: translateX(5%);
+    -os- transform: translateX(5%);
+    transform: translateX(5%);
+	background-color: #98e3fe;
+	cursor:pointer;
+}
+table.table{
+/*only target the text in the body that is not the article title*/
+	color: #197495;
+}
+ td.text-aqua{
+	font-size: 1.25em;
+	font-weight: 700;
+	color: #fff;
+}
+th h3{
+/*center the text of the headers in the table header bar*/
+	text-align:center;
+	text-transform: uppercase;
+	font-size: .9em;
+	padding: 10px;
+}
+
+.table   tr  td.text {
+/*border to divide each article*/
+	border-bottom:2px solid #fff;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+/*==================================FORMS*/
+label.formgroup{
+	/* select box at top right for sorting the table */
+	color:#333;
+	padding: 0;
+	margin: 20px 20px 0 0 ;
+	letter-spacing: .04em;
+	font-size: 1em;
+	font-weight: 700;	
+}
+select {
+/*margin: 10px auto;
+*/  background: transparent;
+    border-radius: 0px;
+    border: 2px solid #333;
+    box-shadow: transparent;
+    cursor: pointer;
+    color: #333;
+    font-weight: 300; 
+	box-shadow: none;	
+}
+select input {
+    background: transparent;
+}
+
+/*===================================BUTTONS*/
+button[type="button"], .btn-default:focus, .btn-default.focus{
+	background-color: transparent;
+	border:2px solid #428bca;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;	
+	margin-bottom: 10px;
+	padding: 10px;
+	color: #428bca;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-size: .95em;
+	font-weight: 700;
+	transition: background-color .8s,  color .8s, border .8s;
+}
+
+button[type="button"]:hover{
+	background-color: #428bca;
+	color: #fff;
+}
+span.fixed{
+	position: fixed;
+	border-bottom: 2px solid #333;
+}

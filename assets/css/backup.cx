@@ -1,0 +1,149 @@
+
+/*======================================BODY*/
+body{
+font-family: 'Lato', sans-serif;
+}
+/*=====================================HEADERS*/
+
+h3{
+	font-size: .9em;
+/*	text-transform: uppercase;
+*/	font-weight: 700;	
+	letter-spacing: .075em;
+}
+/*==================================NAVIGATION*/
+nav.navbar {
+	width:100%;
+	height:auto;
+	position: fixed;
+	background-color: #fff;
+
+}
+ul.navbar-brand{
+	margin-right: 50px;
+	width: 100px;
+}
+ul.navbar-brand img{
+	width:75%;
+	height: auto;
+}
+ul.nav li.sort-non-active{
+	width:200px;
+	padding: 0;
+	margin-right: 20px;
+}
+
+li{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+li.non-active h3{
+	color:#fff;
+	font-size:1.2em;
+/*	margin-top: 20px;
+*/	text-transform: uppercase;
+	letter-spacing: .09em;
+}
+/*===================================TABLES*/
+ table.table{
+	margin-top: 100px;
+	letter-spacing: .1em;
+}
+th h3{
+	color:#1fc3ff;
+	font-size: 1em;
+}
+th.first h3{
+	margin-left:20px;
+}
+td img{
+	width:75%;
+	margin:15px;
+
+}
+
+table.table td.text {
+	font-size: .9em;
+	vertical-align: middle;
+	padding:40px;
+	text-align: left;
+	color:#4a5154;
+
+}
+span.fixed{
+
+}
+tr.category:nth-child(1){
+	font-weight: 500;
+	color:#fff;
+}
+
+th h3{
+/*	color: #333;
+*/
+	text-align:center;
+}
+tr:nth-child(1){
+	background-color:#323436;
+		
+}
+.table   tr  td.text {
+	border-bottom:1px solid #1fc3ff;
+z
+}
+.table-bordered > thead > tr > th,
+{
+
+}
+/*==================================FORMS*/
+label.formgroup{
+	color:#1fc3ff;
+	padding: 0;
+	margin-top: 20px;
+	letter-spacing: .08em;
+	font-size: 1em;
+	font-weight: 700;	
+}
+
+select {
+/*   margin: 10px auto;
+*/  background: transparent;
+    border-radius: 0px;
+    border: 2px solid #1fc3ff;
+    box-shadow: transparent;
+    cursor: pointer;
+    color: #1fc3ff;
+    font-weight: 300; /* Overwrites previous font-weight: bold; */
+	box-shadow: none;	
+}
+select input {
+    background: transparent;
+
+}
+/*===================================BUTTONS*/
+button[type="button"], .btn-default:focus, .btn-default.focus{
+	background-color: transparent;
+	border-top:3px solid #428bca;
+	width: 20%;
+	margin-left: 0;
+	margin-right: 0;	
+	margin-bottom: 10px;
+	padding: 3	0px;
+	color: #428bca;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: 700;
+	transition: background-color .8s,  color .8s, border .8s;
+}
+
+button[type="button"]:hover{
+	background-color: #428bca;
+	color: #fff;
+}
+span.fixed{
+	position: fixed;
+	border-bottom: 2px solid #333;
+}

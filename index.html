@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app= "articlesApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Mic_appt</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/custom_style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	<script src="lib/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="lib/jquery.min.js"></script>
+
+</head>
+<body>
+		<!-- Table headers -->
+ 		<nav class="navbar nav-default" ng-model="sort"><!-- loops through the JSON file and spits out the data into the table below -->
+ 			<ul class="navbar-brand" href="">
+ 				<li class="non-active"><img alt="Brand" src="assets/img/mic_logo.png"></a></li>
+ 			</ul>
+		    <ul class="nav navbar-nav navbar-right">
+				<li class="sort-non-active"><label class="formgroup">Sort</label>
+	    <!-- Drop down select option box -->
+			      <select ng-model="order">
+			        <option value="words">words</option>
+			        <option value="publish_at">submitted</option>
+			      </select>
+		    	</li>
+			</ul>
+	    
+	    </nav>
+	    <!-- Body of Table -->
+		<div class="table-responsive" ng-controller="MainController">
+		<table class="table"  ng-hide="sort">
+				<span class="fixed">
+				   	<tr class="category">
+						<th><h3>Unpublished Articles</h3></th>
+						<th></th>
+						<th><h3>Author</h3></th>
+						<th><h3>Words</h3></th>
+						<th><h3>Submitted</h3></th> 
+					</tr>
+				</span>	
+				<tr ng-repeat="article in articles | limitTo:limit | filter: sort | orderBy: order:direction">
+					<td class="text"><img ng-src="{{article.image}}"></td>
+					<td class="text text-aqua">{{ article.title }}</td>
+					<td class="text">{{ article.profile.first_name}} {{article.profile.last_name }}</td>
+					<td class="text">{{ article.words }}</td>
+					<td class="text">{{ article.publish_at | formatDate }}</td>
+				</tr>	
+		</table>
+		<!-- End of Table start of button -->
+		<button type="button" class="btn btn-default" ng-click="loadMore()">Load More</button>
+</div>
+</body>
+</html>
