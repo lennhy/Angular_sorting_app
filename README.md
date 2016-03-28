@@ -4,4 +4,4 @@
 
 # Chrome has restrictions that confict with certian parts of the ANGUALRJS services
 
-# If opening on Chrome browser you need to upload the files on a server or local server
+# If opening on Chrome browser you need to upload the files on a server or local server# Angular_sorting_app
