@@ -1,4 +1,4 @@
-#Open app from index.html in Browser Must be Morzilla or Safari or on a server in any browser
+#Open app from index.html in Browser 
 
 # If the file is not on a server Open the index.html file in Morzilla, or Safari.
 
